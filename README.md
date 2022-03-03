@@ -2,6 +2,10 @@
 
 This tool will allow you to export your Streamlabs Loyalty Extension points to a CSV file that can be imported into StreamElements.
 
+*This tool uses cookies and tokens from your browser - this may lead to Streamlabs potentially locking your account if used incorrectly.*
+
+*Use at your own risk.*
+
 ### Setup
 In order for the tool to work, you'll need to install NodeJS and grab a few details from the developer tools in your browser. Please follow the instructions below to get started.
 
