@@ -17,7 +17,7 @@ If you use git, clone the repo using the following command:
 ```bash
 git clone https://github.com/ashcorpdev/sl-export.git && cd sl-export && npm i
 ```
-Alternatively, download this repo as a zip file, extract it in a location of your choosing, and open a terminal in the directory.
+Alternatively, download this repo as a zip file (Click the green `Code` button in the top-right and click `Download ZIP`), extract it in a location of your choosing, and open a terminal in the directory.
 
 #### Streamlabs Cookies
 Make a copy of the provided `.env.example` file and rename it to `.env`. Once that's done, you'll need to login to the [Streamlabs Dashboard](https://streamlabs.com/dashboard) and sign in with your Twitch account if you haven't done so already.
@@ -25,6 +25,13 @@ Make a copy of the provided `.env.example` file and rename it to `.env`. Once th
 Once you're logged in, go to the [Loyalty Extension](https://streamlabs.com/dashboard#/loyalty) page, you'll need to open up your browser's developer tools. On Firefox/Chrome, you can press F12 to do this; other browsers may have different hotkeys.
 
 On Firefox/Chrome, navigate to the `Network` tab and reload the Streamlabs Loyalty page. Find the `user-points` request and click it. Scrolls down to the `Response Headers` and grab the `user-agent`, `cookie` and `x-csrf-token` values replace the placeholder text inside of `.env` file.
+
+#### Example of valid headers:
+```
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:97.0) ... ... ...
+Cookie: slobs_user=o1h3o1i23h123......; __sla-uuid=....; __stripe_mid=.....; ... ... ...
+x-csrf-token: iuu423odu4g9783g4go1jbdHG0ivA... ... ...
+```
 
 ### **WARNING! Never provide these to anybody else. They will give complete access to your Streamlabs data, including any API access, payment information or personal information.**
 
